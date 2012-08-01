@@ -1,0 +1,67 @@
+\usepackage{lmodern}
+\usepackage{cmbright}
+\usepackage{moreverb}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage[normalem]{ulem} 
+\usepackage{colortbl}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage[scaled]{helvet}
+
+\setbeamertemplate{navigation symbols}{}
+
+\definecolor{STRCOL}{RGB}{251, 128, 114}
+
+\setbeamercolor*{normal text}{fg=black} 
+\setbeamercolor*{alerted text}{fg=red} 
+\setbeamercolor*{example text}{fg=black} 
+\setbeamercolor*{structure}{fg=STRCOL!50!black,bg=white} 
+\setbeamercolor*{footline}{fg=black}
+
+\setbeamercolor*{block title}{fg=STRCOL!50!black}
+\setbeamercolor*{block body}{fg=black}
+
+\setbeamercolor*{block title example}{fg=green!60!black}
+\setbeamercolor*{block body example}{fg=black}
+\setbeamerfont{block title}{family=\bfseries}
+\setbeamerfont{structure}{family=\bfseries}
+\setbeamercolor*{normal text}{fg=black} 
+
+\setbeamertemplate{background canvas}[vertical shading][top=blue!2!white,middle=white,bottom=white]
+
+\newlength\barheight\setlength\barheight{\paperheight}
+\divide\barheight by 12
+%\setbeamerfont{title}{size=\huge,family=\sffamily}
+\setbeamerfont{frametitle}{shape=\bfseries,size=\large}
+%\setbeamerfont{subtitle}{size=\Large,shape=\itshape}
+%\setbeamerfont{author}{shape=\bfseries,family=\sffamily}
+%\setbeamerfont{institute}{size=\small,family=\sffamily}
+%\setbeamertemplate{itemize items}[triangle] 
+\setbeamertemplate{title page}
+{
+\vskip 5pt
+{\sffamily\tiny\insertdate}
+\vskip0pt plus 1filll
+\vbox to 2\barheight{%
+{\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}}%
+\vskip -2em
+\ifx\insertsubtitle\@empty\else%
+\vskip 1em
+{\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
+\fi
+\vskip0pt plus 1filll
+{\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor}
+\vskip4pt
+{\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute}
+\vskip 1em
+} 
+
+\setbeamertemplate{frametitle}{%
+\begin{flushright}%
+\insertframetitle%
+\end{flushright}%
+\vskip -1em
+}
+
+%\insertpagenumber~de~\insertpresentationendpage

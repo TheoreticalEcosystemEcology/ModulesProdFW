@@ -1,0 +1,39 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Brief Article}
+\author{The Author}
+%\date{}                                           % Activate to display a given date or no date
+
+\usepackage{pgfplots}
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+
+
+
+\begin{tikzpicture}
+\begin{axis}[view={0}{90},
+	grid = major, colormap/jet,
+	colorbar,
+	xmin = 0, xmax = 0.8,
+	ymin = 0, ymax = 0.8,
+	zmin = 0, zmax = 2,
+	xlabel = Exploitative competition,
+	ylabel = Apparent competition,
+	label = Mean biomass]
+\addplot3+ [only marks, mark=*, scatter] table [x=S4,y=S5, z=bmm] {../cleaned.dat};
+\end{axis}
+\end{tikzpicture}
+
+\end{document}  
