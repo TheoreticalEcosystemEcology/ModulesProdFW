@@ -66,18 +66,75 @@
 \section{Introduction}
 
 %% Complexity of food webs, need to find simple predictors
-The complexity of natural ecological communities was qualified of \emph{`baroque'} \parencite{Holt1997}, on account of the multiplicity of ways in which two or more species can embed themselves in a web of interactions. This prompted a series of studies of ``community modules'', i.e. the pattern of interactions between three species, which were though to be the right scale of observation to capture mechanisms underlying the organization of more complex communities. Most of the recent research on species interaction networks in general, and food webs in particular, aimed at making sense of this complexity at a large scale, and  render it manageable. \textcite{Berlow2009} showed that perturbations of one species rarely spread farther than one or two of its closest neighbors, meaning that even in highly complex networks, community modules are an appropriate scale of observation.
+The complexity of natural ecological communities was qualified of
+\emph{`baroque'} \parencite{Holt1997}, on account of the multiplicity of ways in
+which two or more species can embed themselves in a web of interactions. This
+prompted a series of studies of ``community modules'', i.e. the pattern of
+interactions between three species, which were though to be the right scale of
+observation to capture mechanisms underlying the organization of more complex
+communities. Most of the recent research on species interaction networks in
+general, and food webs in particular, aimed at making sense of this complexity
+at a large scale, and render it manageable. \textcite{Berlow2009} showed that
+perturbations of one species rarely spread farther than one or two of its
+closest neighbors, meaning that even in highly complex networks, community
+modules are an appropriate scale of observation.
 
 %% Challenges in linking structure to functioning
-Establishing links between the structure and the dynamics of food webs is a firmly established research agenda \parencite{Pascual2006}, and one which have been taking prominence over the last few years so as to understand how trophic downgrading will affect the maintenance of ecosystem services \parencite{Estes2011}. Yet, our understanding of this relationship is scarce: most research focused on the variations in biomass of species as a function of their position in the food web \parencite{Williams2007,Berlow2009}, which is still a very species-centric view. Most of our knowledge about the fact that food web structure does affects the functioning of ecosystem comes from analyses of networks of low complexity (i.e. discrete, well identified trophic levels), and focused on extreme cases of connectance \parencite[e.g.][]{Thebault2003,Thebault2007} \textbf{Our PNAS MS}. These studies emphasized that functioning is driven by food web structure when this structure allows to regulate the impact of apparent \emph{vs.} exploitative competition. Building on our newly found ability to make sense of complex structures by looking at smaller modules, there is an opportunity to revisit this relationship by investigating how the functioning of realistic networks is affected by their structure.
+Establishing links between the structure and the dynamics of food webs is a
+firmly established research agenda \parencite{Pascual2006}, and one which have
+been taking prominence over the last few years so as to understand how trophic
+downgrading will affect the maintenance of ecosystem services
+\parencite{Estes2011}. Yet, our understanding of this relationship is scarce:
+most research focused on the variations in biomass of species as a function of
+their position in the food web \parencite{Williams2007,Berlow2009}, which is
+still a very species-centric view. Most of our knowledge about the fact that
+food web structure does affects the functioning of ecosystem comes from analyses
+of networks of low complexity (i.e. discrete, well identified trophic levels),
+and focused on extreme cases of connectance
+\parencite[e.g.][]{Thebault2003,Thebault2007} \textbf{Our PNAS MS}. These
+studies emphasized that functioning is driven by food web structure when this
+structure allows to regulate the impact of apparent \emph{vs.} exploitative
+competition. Building on our newly found ability to make sense of complex
+structures by looking at smaller modules, there is an opportunity to revisit
+this relationship by investigating how the functioning of realistic networks is
+affected by their structure.
 
 %% The promise of using motifs: separate different processes
-\textcite{Milo2002} proposed that complex networks are built up from simple blocks, termed ``motifs''. Motifs represent all the possible ways under which $n$ nodes can be connected by directed edges. For the three species case, there are thus 13 different motifs. Most empirical networks display a non-random distribution of these motifs \parencite{Bascompte2005,Stouffer2007}, indicating that they emerge through a resource/prey selection process. More importantly, for some of the simplest motifs (which also happen to be the most abundant), it is easy to understand how they contribute to the flow of energy across trophic levels (Fig.~\ref{f:motifDynamics}). Because these motifs can be enumerated in any food web, regardless of its complexity, and because each of them represent a different mechanism of biomass transfer across trophic levels, they are most likely a key to understand how food web structure translates into functioning. Furthermore, the position occupied by species in different motifs (i.e. at the top of a linear food chain, or as the arbiter of apparent competition) shows strong evolutionary conservatism \parencite{Stouffer2012}, or in other words, species tend to be involved more in some motifs than in others. This implies that species functional role within the food web can be studied through its contribution to different motifs, making them a tool to both compare functioning between food webs with different structures, and understand differences in biomass between species of a food web.
+\textcite{Milo2002} proposed that complex networks are built up from simple
+blocks, termed ``motifs''. Motifs represent all the possible ways under which
+$n$ nodes can be connected by directed edges. For the three species case, there
+are thus 13 different motifs. Most empirical networks display a non-random
+distribution of these motifs \parencite{Bascompte2005,Stouffer2007}, indicating
+that they emerge through a resource/prey selection process. More importantly,
+for some of the simplest motifs (which also happen to be the most abundant), it
+is easy to understand how they contribute to the flow of energy across trophic
+levels (Fig.~\ref{f:motifDynamics}). Because these motifs can be enumerated in
+any food web, regardless of its complexity, and because each of them represent a
+different mechanism of biomass transfer across trophic levels, they are most
+likely a key to understand how food web structure translates into functioning.
+Furthermore, the position occupied by species in different motifs (i.e. at the
+top of a linear food chain, or as the arbiter of apparent competition) shows
+strong evolutionary conservatism \parencite{Stouffer2012}, or in other words,
+species tend to be involved more in some motifs than in others. This implies
+that species functional role within the food web can be studied through its
+contribution to different motifs, making them a tool to both compare functioning
+between food webs with different structures, and understand differences in
+biomass between species of a food web.
 
 %% What we did, what we found, what it means
-In this paper, by using a well-documented, calibrated, and widely used model of food web dynamics \parencite{Brose2006a}, we seek to explain (i) the functioning of complex communities and (ii) the productivities of species within a food web, through an investigation of motif composition. We show that functioning is strongly impacted by the presence of exploitative competition (which decreases functioning), linear food chains (having the same effect), and apparent competition (which increases functioning). We show that biomass production can be predicted using a competition-type ratio, \emph{i.e.} the frequency of exploitative over apparent competition motifs, which requires only topological information to be calculated.
+In this paper, by using a well-documented, calibrated, and widely used model of
+food web dynamics \parencite{Brose2006a}, we seek to explain (i) the functioning
+of complex communities and (ii) the productivities of species within a food web,
+through an investigation of motif composition. We show that functioning is
+strongly impacted by the presence of exploitative competition (which decreases
+functioning), linear food chains (having the same effect), and apparent
+competition (which increases functioning). We show that biomass production can
+be predicted using a competition-type ratio, \emph{i.e.} the frequency of
+exploitative over apparent competition motifs, which requires only topological
+information to be calculated.
 
-These results are discussed in the light of previous literature building on similar models to find predictors of food web stability.
+These results are discussed in the light of previous literature building on
+similar models to find predictors of food web stability.
 
 \begin{figure}[tbp]
    \centering
@@ -149,43 +206,86 @@ We apply a dynamical model to these food webs. We use an expansion of the classi
 	\frac{dB_{i}}{dt} & = -x_{i}B_{i} + \sum_{j\in\mathrm{resources}}x_{i}y_{i}B_{i}F_{ij} - \sum_{j\in\mathrm{consumers}}\frac{x_{j}y_{j}B_{j}F_{ji}}{e_{ji}}
 \end{align}
 
-In this model, the extent to which allometric scaling exists in the interaction strength is regulated by a single parameter $Z$, which represents the body mass ratio of consumers and their resources. For $Z = 0$, there is no allometric scaling, and for other values of $Z$, we can explore situations in which consumers are heavier or lighter than their resources. As in the original model, we used a value of unity for $r$ and $K$, so that all biomasses are expressed relatively to the biomass of primary producers. In the formulation of the original model, we assume that our food webs are made of ectotherm vertebrates and most of the interactions are carnivory, meaning that the parameter values are as follows: $e_{ij}$, the assimilation efficiency, is 0.85; $x_{i}$, the maximum metabolic rate, is equal to $(a_{x}/a_{r})\times(M_{C}/M_{P})^{-0.25}$; $y_{i}$, the maximal consumption rate, is equal to $a_{y}/a_{x}$; $M = Z^{T}$, $a_{r} = 1$, $a_{x} = 0.88$, and $y_{i} = 4$.
+In this model, the extent to which allometric scaling exists in the interaction
+strength is regulated by a single parameter $Z$, which represents the body mass
+ratio of consumers and their resources. For $Z = 0$, there is no allometric
+scaling, and for other values of $Z$, we can explore situations in which
+consumers are heavier or lighter than their resources. As in the original model,
+we used a value of unity for $r$ and $K$, so that all biomasses are expressed
+relatively to the biomass of primary producers. In the formulation of the
+original model, we assume that our food webs are made of ectotherm vertebrates
+and most of the interactions are carnivory, meaning that the parameter values
+are as follows: $e_{ij}$, the assimilation efficiency, is 0.85; $x_{i}$, the
+maximum metabolic rate, is equal to $(a_{x}/a_{r})\times(M_{C}/M_{P})^{-0.25}$;
+$y_{i}$, the maximal consumption rate, is equal to $a_{y}/a_{x}$; $M = Z^{T}$,
+$a_{r} = 1$, $a_{x} = 0.88$, and $y_{i} = 4$.
 
-The functional responses are assumed to be of the predator interference type (hill exponent $h = 1$, competition coefficient $c = 1$), so that
+The functional responses are assumed to be of the predator interference type
+(hill exponent $h = 1$, competition coefficient $c = 1$), so that
 
 \begin{equation}
 	F_{ij} = \frac{\omega_{ij}B_{j}^h}{B_{0}^{h}+cB_{i}B_{0}^{h}+\sum_{k\in \mathrm{preys}}\omega_{ik}B_{i}^{h}},
 \end{equation}
 
-with $B_{0}$ fixed to $1/2$, and $\omega_{ij}$ fixed to $1/n$ wherein $n$ is the number of preys, to reflect uniform relative consumption rate over consumers, and no prey preference. For more informations about this model, readers are encouraged to refer to the original publications \parencite{Brose2006a,Williams2007}.
+with $B_{0}$ fixed to $1/2$, and $\omega_{ij}$ fixed to $1/n$ wherein $n$ is the
+number of preys, to reflect uniform relative consumption rate over consumers,
+and no prey preference. For more informations about this model, readers are
+encouraged to refer to the original publications
+\parencite{Brose2006a,Williams2007}.
 
-In each of the 178 food webs, we simulate this model using 100 replicates of the following procedure. First, species with a out degree of 0 are primary producers. Then, we use this information to measure the trophic rank, as the minimal distance between one species and a primary producer. While other measures have been used \parencite{Post2002}, this definition makes sense in an ecosystem functioning perspective, as most of the biodiversity-functioning relationship appears driven by complementarity in resource use (in addition, using either the mean or the maximum distance to primary producers yielded qualitatively similar results). We use the trophic rank information to calculate the species-specific parameters. At the beginning of each simulation, each species of the network is assigned a starting population density, drawn uniformly from $[0.05, 1]$. We let the system run for $10^{4}$ time steps, and record the individual biomass of each species over the last $10^{3}$ time steps.
+In each of the 178 food webs, we simulate this model using 100 replicates of the
+following procedure. First, species with a out degree of 0 are primary
+producers. Then, we use this information to measure the trophic rank, as the
+minimal distance between one species and a primary producer. While other
+measures have been used \parencite{Post2002}, this definition makes sense in an
+ecosystem functioning perspective, as most of the biodiversity-functioning
+relationship appears driven by complementarity in resource use (in addition,
+using either the mean or the maximum distance to primary producers yielded
+qualitatively similar results). We use the trophic rank information to calculate
+the species-specific parameters. At the beginning of each simulation, each
+species of the network is assigned a starting population density, drawn
+uniformly from $[0.05, 1]$. We let the system run for $10^{4}$ time steps, and
+record the individual biomass of each species over the last $10^{3}$ time steps.
 
 \subsection{Analyses}
 
 \paragraph{Network structure}
 
-For each network, we count the number of motifs using the following procedure. We took all possible groups of three species, and look at the linkage pattern between them. Motifs are attributed and named as in \textcite{Stouffer2007}. The total number $N_{m}$ of motifs is counted, and, so as to normalize motif counts by the network size and connectance, we use the frequency of each motif in the analyzes, so that for any motif $n$ found $N_{n}$ times,
+For each network, we count the number of motifs using the following procedure.
+We took all possible groups of three species, and look at the linkage pattern
+between them. Motifs are attributed and named as in \textcite{Stouffer2007}. The
+total number $N_{m}$ of motifs is counted, and, so as to normalize motif counts
+by the network size and connectance, we use the frequency of each motif in the
+analyzes, so that for any motif $n$ found $N_{n}$ times,
 
 \begin{equation}
 	f(n) = \frac{N_{n}}{N_{m}}.
 \end{equation}
 
-This procedure is also done at the level of the species, \emph{i.e.} each time a species $i$ is found in motif $n$, $N_{n}^{i}$ increases by 1. As for networks, the motif count of each species is transformed in a frequency, so that if species $i$ is found in a total of $N_{m}^{i}$ motifs,
+This procedure is also done at the level of the species, \emph{i.e.} each time a
+species $i$ is found in motif $n$, $N_{n}^{i}$ increases by 1. As for networks,
+the motif count of each species is transformed in a frequency, so that if
+species $i$ is found in a total of $N_{m}^{i}$ motifs,
 
 \begin{equation}
 	f^{i}(n) = \frac{N_{n}^{i}}{N_{m}^{i}}.
 \end{equation}
 
-Because of the strong negative linear correlation between the frequency of motifs S4 and S5 (resp. exploitative and apparent competition), we define a competition-type ratio, such that
+Because of the strong negative linear correlation between the frequency of
+motifs S4 and S5 (resp. exploitative and apparent competition), we define a
+competition-type ratio, such that
 
 \begin{equation}
 	C_{R} = \frac{f(S_4)}{f(S_5)}.
 \end{equation}
 
-For values of this ratio larger than unity, there are more exploitative than apparent competition motifs.
+For values of this ratio larger than unity, there are more exploitative than
+apparent competition motifs.
 
-\paragraph{Functioning} We record the biomass of the whole food web, which we divide by the number of species $S$, so that
+\paragraph{Functioning}
+
+We record the biomass of the whole food web, which we divide by the number of
+species $S$, so that
 
 \begin{equation}
 	\bar B = \sum_{i=1}^{S}\frac{B_{i}}{S}.
@@ -195,7 +295,12 @@ In addition, the raw biomass of each species is also recorded.
 
 \section{Results}
 
-The 178 networks from our dataset show a large variation in their composition in the different motifs (Fig.~\ref{f:motifs}). Most of the double-link motifs are really rare, and because their relevance to energy flow is difficult to establish, we focus our analysis on the single-link motifs. We present results at two scales of organization: biomass production for the whole network, and biomass production for each species within a set of representative networks.
+The 178 networks from our dataset show a large variation in their composition in
+the different motifs (Fig.~\ref{f:motifs}). Most of the double-link motifs are
+really rare, and because their relevance to energy flow is difficult to
+establish, we focus our analysis on the single-link motifs. We present results
+at two scales of organization: biomass production for the whole network, and
+biomass production for each species within a set of representative networks.
 
 \begin{figure}[tbp]
    \centering
@@ -226,7 +331,18 @@ The 178 networks from our dataset show a large variation in their composition in
 
 \paragraph{Biomass production between food webs}
 
-We report patterns of biomass as a function of the composition of each network in the five single-linked (S1 to S5) motifs (Tab.~\ref{t:ANOVAwebs}). Switching from scaling ($K = 2$) to no scaling ($K = 0$) has only quantitative differences on the patterns, with simulations with scaling resulting in a higher mean biomass. Unless explicitly stated, the figures depict the results of the simulations with no scaling. Out of the 5 motifs we study, only S5 (apparent competition) favored biomass production (Fig.~\ref{f:wprod}). The most important effect on biomass production is the frequency of motif $S_{4}$, either by itself or when examined as part of the competition type ratio $C_{R}$. Note that using $C_{R}$ or the additive effect of $S_{4}+S_{5}$ yields the same $R^{2}$. As $C_{R}$ represents the relative importance of two competition mechanisms, we will focus on discussing it rather than $S_{4}$ and $S_{5}$ separately.
+We report patterns of biomass as a function of the composition of each network
+in the five single-linked (S1 to S5) motifs (Tab.~\ref{t:ANOVAwebs}). Switching
+from scaling ($K = 2$) to no scaling ($K = 0$) has only quantitative differences
+on the patterns, with simulations with scaling resulting in a higher mean
+biomass. Unless explicitly stated, the figures depict the results of the
+simulations with no scaling. Out of the 5 motifs we study, only S5 (apparent
+competition) favored biomass production (Fig.~\ref{f:wprod}). The most important
+effect on biomass production is the frequency of motif $S_{4}$, either by itself
+or when examined as part of the competition type ratio $C_{R}$. Note that using
+$C_{R}$ or the additive effect of $S_{4}+S_{5}$ yields the same $R^{2}$. As
+$C_{R}$ represents the relative importance of two competition mechanisms, we
+will focus on discussing it rather than $S_{4}$ and $S_{5}$ separately.
 
 \begin{table}[tbp]
    \centering
