@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\usepackage[sc]{mathpazo}
+\usepackage[parfill]{parskip}
+
+\title{Conceptual approach to the link between motif composition and functioning}
+\author{T. Poisot}
+
+\begin{document}
+	
+	\maketitle
+
+	A motif is any set of three species having a degree of at least one. For
+	simplicity we focus on the case of single-link degrees, of which there are
+	five, are these are the most commonly occuring.
+
+	We assume that all species have equal growth rate $r$ and crowding factor
+	$q$, so that (i) they can persist at an equilibrium density higher than 0
+	when alone, and (ii) the only differences in their equilibrium dynamics is
+	triggered by interactions. For any species $i$ in a motif, its dynamics is
+	given by
+
+	\begin{equation}
+		\frac{dN_i}{dt} = N_i\left[r-qN_i+\sum_j\left(\alpha_{ij}-\alpha_{ji}\right)N_j\right]
+	\end{equation}
+
+	To alternate between one of the five single-link motifs, one simply needs
+	to switch the relevant $\alpha$ coefficients to 0. For example, in a
+	linear food chain, all coefficients but $\alpha_{12}$ and $\alpha_{23}$
+	are turned off.
+
+	We derive the equilibrium density of this system with three species,
+	yielding general expressions for $N_1^*$, $N_2^*$ and $N_3^*$. We furthermore
+	define the total equilibrium biomass of the system as $T^* = \sum_iN_i^*$.
+	We investigate the function of $T^*$ as a function of the values of all
+	$\alpha$ coefficients.
+
+	The general expression of $T^*$ is
+
+	\begin{equation}
+		T^* = r\times\frac{\alpha_{12}-\alpha_{13}-\alpha_{21}+\alpha_{23}+\alpha_{31}-\alpha_{32}+3q}{(\alpha_{12}-\alpha_{21})(\alpha_{12}-\alpha_{21}-\alpha_{23}-\alpha_{32})+q\times(q-\alpha_{13}+\alpha_{31})}
+	\end{equation}
+
+	Using this general expression, we can derive the equilibrium biomass
+	$T_n^*$ in any motif $n$. To simplify this expression, we correct the
+	total biomass by the species growth rate, so that $B_n^* = T_n^*/r$ In a
+	linear food chain ($n=1$), all coefficients but $\alpha_{12}$ and
+	$\alpha_{23}$ are set to 0, yielding
+
+	\begin{equation}
+		B_1^* = \frac{\alpha_{12}+\alpha_{23}+3q}{\alpha_{12}\times(\alpha_{12}-\alpha_{23})}
+	\end{equation}
+
+	In an omnivory motif ($n = 2$), species 1 can consume species 3, so that
+	$\alpha_{13}$ is restored. This yields
+
+	\begin{equation}
+		B_2^* = \frac{\alpha_{12}-\alpha_{13}+\alpha_{23}+3q}{\alpha_{12}\times(\alpha_{12}-\alpha_{23})+q\times(q-\alpha_{13})}
+	\end{equation}
+
+	In a trophic loop motif ($n=3$), species 3 becomes a consumer of species
+	1, so that $\alpha_{13}$ is set to 0, and $\alpha_{31}$ is restored. This
+	yields
+
+	\begin{equation}
+		B_3^* = \frac{\alpha_{12}+\alpha_{23}+\alpha_{31}+3q}{\alpha_{12}\times(\alpha_{12}-\alpha_{23})+q\times(q+\alpha_{31})}
+	\end{equation}
+
+	In an exploitative competition motif ($n=4$), species 2 is consumed by
+	both species 1 and 3, so that only $\alpha_{12}$ and $\alpha_{32}$ are
+	kept. This yields
+
+	\begin{equation}
+		B_4^* = \frac{\alpha_{12}-\alpha_{32}+3q}{\alpha_{12}\times(\alpha_{12}-\alpha_{32})}
+	\end{equation}
+
+	Finally, in an apparent competition motif ($n=5$), species 2 is consuming
+	both species 1 and 3, so that only $\alpha_{21}$ and $\alpha_{23}$ are
+	kept. This yields
+
+	\begin{equation}
+		B_5^* = \frac{\alpha_{23}-\alpha_{21}+3q}{\alpha_{21}\times(\alpha_{21}+\alpha_{23})}
+	\end{equation}
+
+\end{document}
