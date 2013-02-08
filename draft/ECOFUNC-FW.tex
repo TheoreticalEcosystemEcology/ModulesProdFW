@@ -327,6 +327,27 @@ biomass production for each species within a set of representative networks.
 				\legend{$f(S_{1})$,$f(S_{2})$,$f(S_{3})$,$f(S_{4})$,$f(S_{5})$};
 			\end{axis}
 		\end{tikzpicture}
+		\begin{tikzpicture}
+			\begin{axis}[height=7cm, width=.75\textwidth,
+				stack plots=y, enlargelimits=false,
+				const plot, area style,
+				ymin=0, ymax=1,
+				cycle list name=pastel,
+				xlabel = Network rank ($\bar B$), ylabel = Motif frequency,
+				legend style={
+					area legend,
+					at={(1.05,0.5)},
+					anchor=west,
+					legend columns=1}
+			]
+				\addplot table [x=prank, y=S1] {../ep.dat} \closedcycle;
+				\addplot table [x=prank, y=S2] {../ep.dat} \closedcycle;
+				\addplot table [x=prank, y=S3] {../ep.dat} \closedcycle;
+				\addplot table [x=prank, y=S4] {../ep.dat} \closedcycle;
+				\addplot table [x=prank, y=S5] {../ep.dat} \closedcycle;
+				\legend{$f(S_{1})$,$f(S_{2})$,$f(S_{3})$,$f(S_{4})$,$f(S_{5})$};
+			\end{axis}
+		\end{tikzpicture}
    \caption{Variation in motif composition across the 178 food webs studied. Networks are ranked on the x-axis as a function of their mean biomass per species at equilibrium. Motif S4 and S5 are the most abundant, and motif S3 is the least abundant. Some double-link motifs are found in the food webs from our dataset, accounting for the small white space atop some bars.}
    \label{f:motifs}
 \end{figure}
@@ -400,6 +421,29 @@ will focus on discussing it rather than $S_{4}$ and $S_{5}$ separately.
 			\addlegendentry{scaling}
 			\addplot+[only marks] table [x=compratio,y=bm] {../w-unscaled.dat};
 			\addlegendentry{no scaling}
+		\end{semilogxaxis}
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\begin{axis}[height=7cm, width=.45\textwidth,
+			xlabel = Frequency of motif,
+			ylabel = Mean biomass,
+			grid=major, name = plot1, cycle list name=hc]
+			\addplot+[only marks] table [x=S1,y=bm] {../ep.dat};
+			\addlegendentry{$S_{1}$}
+			\addplot+[only marks] table [x=S2,y=bm] {../ep.dat};
+			\addlegendentry{$S_{2}$}
+			\addplot+[only marks] table [x=S4,y=bm] {../ep.dat};
+			\addlegendentry{$S_{4}$}
+			\addplot+[only marks] table [x=S5,y=bm] {../ep.dat};
+			\addlegendentry{$S_{5}$}
+		\end{axis}
+		\begin{semilogxaxis}[height=7cm, width=.45\textwidth,
+			xlabel= Competition type ratio -- $C_{R}$,
+			ylabel = Mean biomass,
+			grid=major, at={($(plot1.east)+(2cm,0)$)},anchor=west,
+			cycle list name=hc]
+			\addplot+[only marks] table [x=compratio,y=bm] {../ep.dat};
+			\addlegendentry{scaling}
 		\end{semilogxaxis}
 	\end{tikzpicture}
    \caption{Mean biomass produced by each species within the 178 food webs. \textbf{Left:} mean biomass expressed as a function of the frequency of the four most important motifs: S1, S2, S4 and S5. Of all the motifs considered here, only the one indicating apparent competition (S5) results in an increase in biomass production. \textbf{Right:} mean biomass expressed as a function of $C_{R}$, with values above unity indicating more exploitative than apparent competition. Simulations with and without allometric scaling yield the same pattern.}

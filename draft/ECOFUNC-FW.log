@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.28)  7 FEB 2013 20:09
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.28)  8 FEB 2013 10:48
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -981,6 +981,15 @@ PGFPlots: reading {../w-scaled.dat}
 PGFPlots: reading {../w-scaled.dat}
 PGFPlots: reading {../w-scaled.dat}
 Missing character: There is no ; in font nullfont!
+! Package pgfplots Warning: Loading deprecated style option /tikz/every axis gr
+id. Please replace '\tikzstyle{every axis grid}' with '\pgfplotsset{every axis 
+grid/.style={}}' (or '\pgfplotsset{every axis grid/.append style={}}').
+PGFPlots: reading {../ep.dat}
+PGFPlots: reading {../ep.dat}
+PGFPlots: reading {../ep.dat}
+PGFPlots: reading {../ep.dat}
+PGFPlots: reading {../ep.dat}
+Missing character: There is no ; in font nullfont!
 [8] [9]
 ! Package pgfplots Warning: Loading deprecated style option /tikz/every axis gr
 id. Please replace '\tikzstyle{every axis grid}' with '\pgfplotsset{every axis 
@@ -994,14 +1003,29 @@ id. Please replace '\tikzstyle{every axis grid}' with '\pgfplotsset{every axis
 grid/.style={}}' (or '\pgfplotsset{every axis grid/.append style={}}').
 PGFPlots: reading {../w-scaled.dat}
 PGFPlots: reading {../w-unscaled.dat}
+! Package pgfplots Warning: Loading deprecated style option /tikz/every axis gr
+id. Please replace '\tikzstyle{every axis grid}' with '\pgfplotsset{every axis 
+grid/.style={}}' (or '\pgfplotsset{every axis grid/.append style={}}').
+PGFPlots: reading {../ep.dat}
+PGFPlots: reading {../ep.dat}
+PGFPlots: reading {../ep.dat}
+PGFPlots: reading {../ep.dat}
+! Package pgfplots Warning: Loading deprecated style option /tikz/every axis gr
+id. Please replace '\tikzstyle{every axis grid}' with '\pgfplotsset{every axis 
+grid/.style={}}' (or '\pgfplotsset{every axis grid/.append style={}}').
+PGFPlots: reading {../ep.dat}
+NOTE: coordinate (0,0.712775931676611) has been dropped because it is unbounded
+ (in x). 
+NOTE: coordinate (0,1.05006381427248) has been dropped because it is unbounded 
+(in x). 
 [10] [11]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 416.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 460.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 416.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 460.
  [12]
 (./ECOFUNC-FW.aux)
 
@@ -1017,13 +1041,13 @@ Package logreq Info: Writing requests to 'ECOFUNC-FW.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24541 strings out of 493485
- 537098 string characters out of 3143525
- 1234439 words of memory out of 3000000
- 27385 multiletter control sequences out of 15000+200000
+ 24886 strings out of 493485
+ 544435 string characters out of 3143525
+ 1256439 words of memory out of 3000000
+ 27728 multiletter control sequences out of 15000+200000
  17643 words of font info for 52 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 63i,19n,93p,862b,5568s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,20n,93p,862b,5568s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
@@ -1038,7 +1062,7 @@ sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/s
 hare/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/typ
 e1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
 fti1200.pfb>
-Output written on ECOFUNC-FW.pdf (12 pages, 317865 bytes).
+Output written on ECOFUNC-FW.pdf (12 pages, 369130 bytes).
 PDF statistics:
  107 PDF objects out of 1000 (max. 8388607)
  77 compressed objects within 1 object stream
