@@ -41,7 +41,7 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="0">
+  <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
       <file>ECOFUNC-FW.aux</file>
@@ -60,7 +60,7 @@
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="0">
+  <external package="biblatex" priority="5" active="1">
     <generic>bibtex</generic>
     <cmdline>
       <binary>bibtex</binary>
@@ -81,7 +81,7 @@
       <file>ECOFUNC-FW-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>library.bib</file>
+      <file>/home/tpoisot/texmf/bibtex/bib/local/library.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>

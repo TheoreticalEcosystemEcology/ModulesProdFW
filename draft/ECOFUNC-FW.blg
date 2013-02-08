@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2011)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ECOFUNC-FW.aux
 The style file: biblatex.bst
@@ -14,57 +14,96 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ECOFUNC-FW-blx.bib
-Database file #2: library.bib
-Repeated entry---line 39005 of file library.bib
- : @article{Thebault2007
- :                      ,
+Database file #2: /home/tpoisot/texmf/bibtex/bib/local/library.bib
+I was expecting a `,' or a `}'---line 17011 of file /home/tpoisot/texmf/bibtex/bib/local/library.bib
+ :  booktitle = {Hommage {\textbackslash}à\} 
+ :                                            Louis Euzet : Taxonomy, ecology, and evolution of metazoan parasites},
 I'm skipping whatever remains of this entry
-Repeated entry---line 39095 of file library.bib
- : @article{Thebault2003
- :                      ,
+"," immediately follows a field name---line 22601 of file /home/tpoisot/texmf/bibtex/bib/local/library.bib
+ :  abstract = {1. Invasive alien plant species pose a severe threat to native plant communities world-wide, especially on islands. While many studies focus on the direct impact of alien plants on native systems, indirect effects of plant invaders on co-flowering natives, for example through competition for pollination services, are less well studied and the results are variable. 2. We used six temporally and taxonomically highly resolved plant–pollinator networks from the island of Mah{\textbackslash}é\}, Seychelles
+ :                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           , to investigate the indirect impact of invasive alien plant species on remnant native plant communities mediated by shared pollinators. We employed fully quantitative network parameters and information on plant reproductive success, and pollinator diversity and behaviour, to detect changes in plant–pollinator networks along an invasion gradient. 3. The number of visits to and fruit set of native plants did not change with invasion intensity. Weighted plant linkage and interaction evenness, however, was lower at invaded sites than at less invaded sites. These patterns were primarily driven by shifts in interactions of the most common pollinator, the introduced honey bee Apis mellifera, while weak interactions and strong native interactions remained unchanged. {4.Synthesis.} The implications of these findings are twofold: first, quantitative network parameters are important tools for detecting underlying biological patterns. Secondly, alien plants and pollinators may play a greater role in shaping network structure at high than low levels of invasion. We could not show, however, whether the presence of invasive plants result in a simplification of plant–pollinator networks that is detrimental to native plants and pollinators alike.},
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 26597 of file /home/tpoisot/texmf/bibtex/bib/local/library.bib
+ :  abstract = {{\{Aims:{\textbackslash}Ô\}\{ø\}\$Ømega\$To\}} 
+ :                                                                isolate and characterize bacteriophages, and to evaluate its lytic performance against avian pathogenic Escherichia coli \{({APEC)\}} strains with high patterns of antibiotic resistance, in order to select phages for a therapeutic product to treat colibacillosis in {\{chickens.Methods\}} and Results:{\textbackslash}Ô\}\{ø\}\$Ømega\$ Bacteriophages were isolated from poultry sewage and tested against 148 O-serotyped {\{APEC\}} strains. The morphological characterization of the bacteriophages was made by transmission electronic microscopy \{({TEM)\}} observations and the genetic comparison between bacteriophages {\{DNA\}} was performed by restriction fragment length polymorphism \{({RFLP)\}} patterns. Results showed that 70{\textbackslash}Ô\}\{ø\}\$Ømega\$5\% of the tested E. coli strains were sensitive to a combination of three of the five isolated phages, that seemed to be virulent and taxonomically belong to the Caudovirales order. Two of them look like 16201319, T4-like phages \{(Myoviridae)\} and the third is a T1-like phage and belongs to Syphoviridae family. All of them are genetically {\{different.Conclusions:{\textbackslash}Ô\}\{ø\}\$Ømega\$\}} It was possible to obtain a combination of three different lytic bacteriophages with broad lytic spectra against the most prevalent O-serotypes of {\{APEC.Significance\}} and Impact of the Study:{\textbackslash}Ô\}\{ø\}\$Ømega\$ Data reported in this study, presents an in vitro well studied phage product to be used as antimicrobial agent to treat colibacillosis in poultry industry.},
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 29350 of file /home/tpoisot/texmf/bibtex/bib/local/library.bib
+ :  annote = {Citt{\textbackslash}é\} 
+ :                                     par Taddei papier mortalit{\textbackslash}é\} phages : sensibilit{\textbackslash}é\} {\textbackslash}à\} la temp{\textbackslash}é\}rature}
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 37833 of file /home/tpoisot/texmf/bibtex/bib/local/library.bib
+ :  annote = {Un syst{\textbackslash}è\}
+ :                                       me tel que {dH/dt} = H * F({H,P)} {dP/dt} = P * G({H,P)} montre soit des cycles limites soit un point d'{\textbackslash}é\}quilibre non-trivial si et seulement si F({0,A)} = 0 pour A {\textgreater}0 F(B,0) = 0 pour B {\textgreater} 0 G(C,0) = 0 pour C {\textgreater} 0 et B {\textgreater} C {\textbackslash}é\}tendu par May dans Stability and complexity in model ecosystems pour = {\textbackslash}à\} la place des in{\textbackslash}é\}galit{\textbackslash}é\}s, voir pp 87 {\textbackslash}à\} 89}
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 39947 of file /home/tpoisot/texmf/bibtex/bib/local/library.bib
+ :  title = {Hommage {\textbackslash}à\} 
+ :                                        Louis Euzet : Taxonomy, ecology, and evolution of metazoan parasites},
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 41893 of file /home/tpoisot/texmf/bibtex/bib/local/library.bib
+ :  annote = {The increasing availability of phylogenetic data, computing power and informatics tools has facilitated a rapid expansion of studies that apply phylogenetic data and methods to community ecology. Several key areas are reviewed in which phylogenetic information helps to resolve long-standing controversies in community ecology, challenges previous assumptions, and opens new areas of investigation. In particular, studies in phylogenetic community ecology have helped to reveal the multitude of processes driving community assembly and have demonstrated the importance of evolution in the assembly process. Phylogenetic approaches have also increased understanding of the consequences of community interactions for speciation, adaptation and extinction. Finally, phylogenetic community structure and composition holds promise for predicting ecosystem processes and impacts of global change. Major challenges to advancing these areas remain. In particular, determining the extent to which ecologically relevant traits are phylogeneti- cally conserved or convergent, and over what temporal scale, is critical to understanding the causes of community phylogenetic structure and its evolutionary and ecosystem consequences. Harnessing phylogenetic information to understand and forecast changes in diversity and dynamics of communities is a critical step in managing and restoring the Earth{\textbackslash}Õ\}
+ :                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          s biota in a time of rapid global change.},
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 42929 of file /home/tpoisot/texmf/bibtex/bib/local/library.bib
+ :  title = {Importance of heterotrophic planktonic communities in a mussel culture environment: the Grande Entr{\textbackslash}é\}
+ :                                                                                                                                  e lagoon, Magdalen Islands (Qu{\textbackslash}é\}bec, Canada)},
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Pascual2006"
+Warning--I didn't find a database entry for "Estes2011"
+Warning--I didn't find a database entry for "Williams2007"
+Warning--I didn't find a database entry for "Berlow2009"
+Warning--I didn't find a database entry for "Thebault2003"
+Warning--I didn't find a database entry for "Thebault2007"
+Warning--I didn't find a database entry for "Milo2002"
+Warning--I didn't find a database entry for "Bascompte2005"
+Warning--I didn't find a database entry for "Stouffer2007"
+Warning--I didn't find a database entry for "Stouffer2012"
+Warning--I didn't find a database entry for "Brose2006a"
+Warning--I didn't find a database entry for "Havens1992"
+Warning--I didn't find a database entry for "Gravel2011a"
+Warning--I didn't find a database entry for "Yodzis1992"
+Warning--I didn't find a database entry for "Post2002"
 Biblatex version: 1.7
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 17 entries,
+You've used 3 entries,
             6019 wiz_defined-function locations,
-            1307 strings with 23277 characters,
-and the built_in function-call counts, 62281 in all, are:
-= -- 2202
-> -- 2165
-< -- 536
-+ -- 766
-- -- 964
-* -- 5837
-:= -- 3953
+            1173 strings with 11042 characters,
+and the built_in function-call counts, 8837 in all, are:
+= -- 353
+> -- 286
+< -- 69
++ -- 119
+- -- 127
+* -- 700
+:= -- 728
 add.period$ -- 0
-call.type$ -- 17
-change.case$ -- 253
-chr.to.int$ -- 88
-cite$ -- 32
-duplicate$ -- 7039
-empty$ -- 6394
-format.name$ -- 1543
-if$ -- 13526
+call.type$ -- 3
+change.case$ -- 37
+chr.to.int$ -- 40
+cite$ -- 4
+duplicate$ -- 898
+empty$ -- 893
+format.name$ -- 174
+if$ -- 1920
 int.to.chr$ -- 0
-int.to.str$ -- 43
+int.to.str$ -- 6
 missing$ -- 0
-newline$ -- 811
-num.names$ -- 775
-pop$ -- 5115
+newline$ -- 123
+num.names$ -- 104
+pop$ -- 682
 preamble$ -- 1
-purify$ -- 331
+purify$ -- 44
 quote$ -- 0
-skip$ -- 3358
+skip$ -- 476
 stack$ -- 0
-substring$ -- 1409
-swap$ -- 2735
-text.length$ -- 510
-text.prefix$ -- 24
+substring$ -- 322
+swap$ -- 338
+text.length$ -- 72
+text.prefix$ -- 2
 top$ -- 1
-type$ -- 634
+type$ -- 102
 warning$ -- 0
-while$ -- 426
+while$ -- 94
 width$ -- 0
-write$ -- 793
-(There were 2 error messages)
+write$ -- 119
+(There were 8 error messages)
