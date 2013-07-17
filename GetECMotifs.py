@@ -4,6 +4,7 @@
 import networkx as nx
 import numpy as np
 import scipy as sp
+import scipy.stats as spst
 
 import getopt
 import sys
@@ -164,11 +165,12 @@ progress = pb.ProgressBar(widgets=widgets)
 for webID in progress(xrange(1,114)):
     fname= 'webs/EP'+str(webID)
     Gr = DiGraphFromList(fname)
+    UpdateTrophicLevel(Gr)
     Motifs = MotifCount(Gr)
     Motifs = map(str,Motifs)
     Out = GetProd(Gr)
     Fname = 'output/EPweb'+str(webID)+'-WEB.dat'
-    f = open(Fname, 'a')
+    f = open(Fname, 'w')
     Out = map(str,Out)
     f.write(str(webID)+' ')
     f.write(str(0)+' ')
@@ -177,6 +179,15 @@ for webID in progress(xrange(1,114)):
     for motif in Motifs:
         f.write('{0} '.format(motif))
     for record in Out:
+        f.write('{0} '.format(record))
+    TLs = [n.tl for n in Gr]
+    Deg = [Gr.degree(n) for n in Gr]
+    OutDeg = [Gr.out_degree(n) for n in Gr]
+    InDeg = [Gr.in_degree(n) for n in Gr]
+    nPP = np.sum([1 for od in OutDeg if od == 0])/float(len(OutDeg))
+    nTP = np.sum([1 for ind in InDeg if ind == 0])/float(len(InDeg))
+    TLinfo = [np.mean(TLs),np.var(TLs),np.median(TLs),np.max(TLs),spst.skew(Deg),spst.skew(OutDeg),spst.skew(InDeg),nPP,nTP]
+    for record in TLinfo:
         f.write('{0} '.format(record))
     f.write('\n')
     f.close()

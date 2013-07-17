@@ -39,8 +39,10 @@ Fval = function(an){
 	return(Fv / sum(Fv))
 }
 
-lapply(split(res,res$scaling),function(x) anova(lm(bm~S1+S2+S3+S4+S5,x)))
-lapply(split(res,res$scaling),function(x) summary(lm(bm~S1+S2+S3+S4+S5,x)))
+lapply(split(res,res$scaling),function(x) anova(lm(bm~S1+S2+S3+S4+S5+gen+vul,x)))
+lapply(split(res,res$scaling),function(x) summary(lm(bm~S1+S2+S3+S4+S5+gen+vul,x)))
 
 lapply(split(res,res$scaling),function(x) anova(lm(bm~S1+S2+S3+compratio,x)))
 lapply(split(res,res$scaling),function(x) summary(lm(bm~S1+S2+S3+compratio,x)))
+
+plot(res$S4,res$bm,pch=20)
